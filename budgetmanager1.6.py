@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 
 from tkinter import *
 
@@ -206,12 +201,38 @@ b_child.grid(row=1,column=3)
 b_liesure=Button(frame3,text="leisure spending",command=func5)
 b_liesure.grid(row=1,column=4)
 
+#chinmayi
+
+#frame4
+frame4=Frame(root,bd=7,bg="#D5A5FB",relief=RIDGE)
+frame4.grid(row=3,column=0)
+label4=Label(frame4,text="Savings",padx=190).grid(row=0,column=0,columnspan=4)
+
+lista=["Goal"] 
+count=1
+listb=[]
+for i in range(len(lista)):
+        x="l_"+lista[i]
+        y="e_"+lista[i]
+        x=Label(frame4,text=lista[i]).grid(row=count,column=0)
+        y=Entry(frame4,width=50)
+        y.grid(row=count,column=1,columnspan=2)
+        listb.append(y)
+        count+=1
+        goal=Label(frame4,text="saving goal for this month: 0000000 " ,padx=30).grid(row=4,column=2)
+
+def savings():
+    save=0
+    for i in listb:
+        z=i.get()
+        save+=int(z)
+    goal=Label(frame4,text="saving goal for this month: " +str(save),padx=30).grid(row=4,column=2)
+savesubmit=Button(frame4,text="submit",command=savings,padx=40,bg="#A8F847")
+savesubmit.grid(row=4,column=1)
+
 
 
 root.mainloop()
-
-
-# In[ ]:
 
 
 
