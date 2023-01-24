@@ -280,25 +280,24 @@ def pie():
     plt.ylabel('')
     plt.legend(labels=counts.index, loc="best")
     plt.show()
-def bar():
+'''def bar():
     totalex=dictexp.get('Household Bills')+ dictexp.get('Living Costs')+ dictexp.get('Banking')+ dictexp.get('Children & Pets')+ dictexp.get('Leisure Spending')
 
-    saved = a - totalex
+    saved = sumrevenue() - totalex
 
-    goal = b
+    goal =savings()
 
     y = [0]
 
     plt.barh(y, saved, color='#b5ffb9', edgecolor='white')
 
-    plt.barh(y, goal, left=[100-i for i in goal], color='#a3acff', edgecolor='white')
+   # plt.barh(y, goal, left=[100-i for i in goal], color='#a3acff', edgecolor='white')
 
-    plt.show() 
+    plt.show() '''
 
 result=customtkinter.CTkButton(frame5,text="VIEW REPORT",command=pie)
-result1=customtkinter.CTkButton(frame5,text="VIEW BAR",command=bar)
 result.grid (row=0,column=0)
-result1.grid (row=1,column=0)
+
 
 
 
