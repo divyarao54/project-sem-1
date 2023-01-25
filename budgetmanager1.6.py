@@ -296,7 +296,7 @@ def budget_manager():
         def bar():
             import tkinter
             from tkinter import messagebox
-            root = tkinter.Tk()
+            root2 = customtkinter.CTk()
             totalex=dictexp.get('Household Bills')+ dictexp.get('Living Costs')+ dictexp.get('Banking')+ dictexp.get('Children & Pets')+ dictexp.get('Leisure Spending')
             saved = revenue__['rev']- int(totalex) 
             def check():
@@ -306,19 +306,18 @@ def budget_manager():
                     per=(saved/goals__['goal'])*100
                     messagebox.showinfo(title='Review of savings',message=str(round(per,2))+'% of your saving goal was achieved.')
 
-            submit_button = tkinter.Button(root, text="Display review",fg='black',bg='#8ed49f', command=check)
-            submit_button.place(x=50, y=100)
+            submit_button = customtkinter.CTkButton(root2, text="Display review", command=check)
+            submit_button.grid(row=0,column=0,padx=20,pady=20)
 
-            root.mainloop()
+            root2.mainloop()
 
         result=customtkinter.CTkButton(frame5,text="VIEW REPORT",command=pie)
         result1=customtkinter.CTkButton(frame5,text="VIEW BAR",command=bar)
-        result.grid (row=0,column=0)
-        result1.grid(row=1,column=1)
+        result.grid (row=0,column=0,padx=20,pady=20)
+        result1.grid(row=0,column=1,padx=20,pady=20)
 
 
 
 
         root.mainloop()
 budget_manager()
-
