@@ -30,28 +30,28 @@ class login_window:
         lbling1=Label(image=self.photoimage1, bg="black", borderwidth=0)
         lbling1.place(x=730, y=175, width=100, height=100)
 
-        get_started=Label(frame, text="Get Started", font=("times new roman", 20, "bold"), fg="white", bg="black")
+        get_started=Label(frame, text="Get Started", font=("Helvetica", 20, "bold"), fg="white", bg="black")
         get_started.place(x=95, y=100)
 
-        username=lb1=Label(frame, text="Username", font=("times new roman", 15, "bold"), fg="white", bg="black")
+        username=lb1=Label(frame, text="Username", font=("Helvetica", 15, "bold"), fg="white", bg="black")
         username.place(x=70, y=155)
 
-        self.txtuser=ttk.Entry(frame, font=("times new roman", 15, "bold"))
+        self.txtuser=ttk.Entry(frame, font=("Helvetica", 15, "bold"))
         self.txtuser.place(x=40, y=180, width=270)
 
-        password=lb1=Label(frame, text="Password", font=("times new roman", 15, "bold"), fg="white", bg="black")
+        password=lb1=Label(frame, text="Password", font=("Helvetica", 15, "bold"), fg="white", bg="black")
         password.place(x=70, y=225)
 
-        self.txtpass=ttk.Entry(frame, font=("times new roman", 15, "bold"))
+        self.txtpass=ttk.Entry(frame, font=("Helvetica", 15, "bold"))
         self.txtpass.place(x=40, y=250, width=270)
 
-        login_button=Button(frame, command=self.login, text="Login", font=("times new roman", 15, "bold"), bd=3, relief=RIDGE, fg="white", bg="red", activeforeground="white", activebackground="red")
+        login_button=Button(frame, command=self.login, text="Login", font=("Helvetica", 15, "bold"), bd=3, relief=RIDGE, fg="white", bg="red", activeforeground="white", activebackground="red")
         login_button.place(x=110, y=300, width=120, height=35)
 
-        register_button=Button(frame, text="New User? Create Account", command=self.register_window, font=("times new roman", 10,"bold"), borderwidth=0, fg="white", bg="black", activeforeground="white", activebackground="black")
+        register_button=Button(frame, text="New User? Create Account", command=self.register_window, font=("Helvetica", 10,"bold"), borderwidth=0, fg="white", bg="black", activeforeground="white", activebackground="black")
         register_button.place(x=25, y=350, width=160)
 
-        #forgot_button=Button(frame, text="Forgot Password?", font=("times new roman", 10,"bold"), borderwidth=0, fg="white", bg="black", activeforeground="white", activebackground="black")
+        #forgot_button=Button(frame, text="Forgot Password?", font=("Helvetica", 10,"bold"), borderwidth=0, fg="white", bg="black", activeforeground="white", activebackground="black")
         #forgot_button.place(x=0, y=370, width=160)
 #================================================================================================================================
     def register_window(self):
@@ -109,51 +109,51 @@ class Register:
         frame= Frame(self.root, bg="white")
         frame.place(x=520, y=100, width=800, height=550)
 
-        register_lbl=Label(frame, text="REGISTRATION", font=("times new roman", 20, "bold"), fg="black", bg="white")
+        register_lbl=Label(frame, text="REGISTRATION", font=("Helvetica", 20, "bold"), fg="black", bg="white")
         register_lbl.place(x=20, y=20)
 
 
-        first_name=Label(frame, text="First Name:", font=("times new roman", 15, "bold"), bg="white")
+        first_name=Label(frame, text="First Name:", font=("Helvetica", 15, "bold"), bg="white")
         first_name.place(x=50, y=100)
-        self.first_name_entry=Entry(frame, textvariable=self.var_first_name, font=("times new roman", 15, "bold"))
+        self.first_name_entry=Entry(frame, textvariable=self.var_first_name, font=("Helvetica", 15, "bold"))
         self.first_name_entry.place(x=50, y=130)
 
-        last_name=Label(frame, text="Last Name:", font=("times new roman", 15, "bold"), bg="white")
+        last_name=Label(frame, text="Last Name:", font=("Helvetica", 15, "bold"), bg="white")
         last_name.place(x=450, y=100)
-        self.last_name_entry=Entry(frame, textvariable=self.var_last_name, font=("times new roman", 15, "bold"))
+        self.last_name_entry=Entry(frame, textvariable=self.var_last_name, font=("Helvetica", 15, "bold"))
         self.last_name_entry.place(x=450, y=130)
 
-        email=Label(frame, text="Email:", font=("times new roman", 15, "bold"), bg="white")
+        email=Label(frame, text="Email:", font=("Helvetica", 15, "bold"), bg="white")
         email.place(x=50, y=200)
-        self.email_entry=Entry(frame, textvariable=self.var_email, font=("times new roman", 15, "bold"))
+        self.email_entry=Entry(frame, textvariable=self.var_email, font=("Helvetica", 15, "bold"))
         self.email_entry.place(x=50, y=230)
 
-        contact_number=Label(frame, text="Contact Number:", font=("times new roman", 15, "bold"), bg="white")
+        contact_number=Label(frame, text="Contact Number:", font=("Helvetica", 15, "bold"), bg="white")
         contact_number.place(x=450, y=200)
-        self.contact_number_entry=Entry(frame, textvariable=self.var_contact_number, font=("times new roman", 15, "bold"))
+        self.contact_number_entry=Entry(frame, textvariable=self.var_contact_number, font=("Helvetica", 15, "bold"))
         self.contact_number_entry.place(x=450, y=230)
 
-        id=Label(frame, text="Enter last 4 digits of your ID:", font=("times new roman", 15, "bold"), bg="white")
+        id=Label(frame, text="Enter last 4 digits of your ID:", font=("Helvetica", 15, "bold"), bg="white")
         id.place(x=50, y=300)
-        self.id_entry=Entry(frame, textvariable=self.var_id, font=("times new roman", 15, "bold"))
+        self.id_entry=Entry(frame, textvariable=self.var_id, font=("Helvetica", 15, "bold"))
         self.id_entry.place(x=50, y=330)
 
-        username_new=Label(frame, text="Username:", font=("times new roman", 15, "bold"), bg="white")
+        username_new=Label(frame, text="Username:", font=("Helvetica", 15, "bold"), bg="white")
         username_new.place(x=450, y=300)
-        self.username_new_entry=Entry(frame, textvariable=self.var_username_new, font=("times new roman", 15, "bold"))
+        self.username_new_entry=Entry(frame, textvariable=self.var_username_new, font=("Helvetica", 15, "bold"))
         self.username_new_entry.place(x=450, y=330)
         
-        password_new=Label(frame, text="Enter Password:", font=("times new roman", 15, "bold"), bg="white")
+        password_new=Label(frame, text="Enter Password:", font=("Helvetica", 15, "bold"), bg="white")
         password_new.place(x=50, y=400)
-        self.password_new_entry=Entry(frame, textvariable=self.var_password_new, font=("times new roman", 15, "bold"))
+        self.password_new_entry=Entry(frame, textvariable=self.var_password_new, font=("Helvetica", 15, "bold"))
         self.password_new_entry.place(x=50, y=430)
 
-        password_confirm=Label(frame, text="Confirm Password:", font=("times new roman", 15, "bold"), bg="white")
+        password_confirm=Label(frame, text="Confirm Password:", font=("Helvetica", 15, "bold"), bg="white")
         password_confirm.place(x=450, y=400)
-        self.password_confirm_entry=Entry(frame, textvariable=self.var_password_confirm, font=("times new roman", 15, "bold"))
+        self.password_confirm_entry=Entry(frame, textvariable=self.var_password_confirm, font=("Helvetica", 15, "bold"))
         self.password_confirm_entry.place(x=450, y=430)
 
-        submit_button=Button(frame, text="SUBMIT", command=self.register_entries, font=("times new roman", 15, "bold"), bd=3, relief=RIDGE, fg="white", bg="red", activeforeground="white", activebackground="red")
+        submit_button=Button(frame, text="SUBMIT", command=self.register_entries, font=("Helvetica", 15, "bold"), bd=3, relief=RIDGE, fg="white", bg="red", activeforeground="white", activebackground="red")
         submit_button.place(x=300, y=500)
 
 #==================================================================================================================================
